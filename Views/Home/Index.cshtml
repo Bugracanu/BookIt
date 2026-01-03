@@ -1,0 +1,25 @@
+@{
+ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4">BookIt'e Hoş Geldiniz!</h1>
+    <p class="lead">Hemen bir hizmet seçin ve randevunuzu kolayca oluşturun.</p>
+    <hr class="my-4">
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach( var service in Model)
+        {
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title">@service.Name</h5>
+                    <p class="card-text text-muted">Süre: @service.Duration Dakika</p>
+                    <p class="card-text fw-bold">Fiyat: @service.Price.ToString("C2")</p>
+                    <a href="#" class="btn btn-outline-primary">RandevuAl</a>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>

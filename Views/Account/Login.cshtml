@@ -1,0 +1,28 @@
+@{
+ViewData["Title"] = "Giriş Yap!";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-4 ccard p-4 shadow-sm border-0">
+        <h2 class="text-center mb-4">Giriş Yap</h2>
+
+        @if (ViewBag.Error != null)
+        {
+        <div class="alert alert-danger">@ViewBag.Error</div>
+        }
+        <form asp-action="Login" method="post">
+            <div class="mb-3">
+                <label class="form-label">E-posta</label>
+                <input name="email" type="email" class="form-control" placeholder="E-posta adresiniz" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Şifre</label>
+                <input name="password" type="password" class="form-control" placeholder="Şifreniz" required />
+            </div>
+            <button type="submit" class="btn btn-success w-100">Giriş Yap</button>
+        </form>
+        <p class="mt-3 text-center">
+            Hesabınız Yok mu? <a asp-action="Register">Kayıt Ol</a>
+        </p>
+    </div>
+</div>

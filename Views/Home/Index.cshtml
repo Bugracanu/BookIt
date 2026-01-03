@@ -16,7 +16,7 @@ ViewData["Title"] = "Ana Sayfa";
                     <h5 class="card-title">@service.Name</h5>
                     <p class="card-text text-muted">Süre: @service.Duration Dakika</p>
                     <p class="card-text fw-bold">Fiyat: @service.Price.ToString("C2")</p>
-                    <a href="#" class="btn btn-outline-primary">RandevuAl</a>
+                    <a asp-controller="Booking" asp-action="Create" asp-route-serviceId="@service.Id" class="btn btn-primary">Randevu Al</a>
                 </div>
             </div>
         </div>

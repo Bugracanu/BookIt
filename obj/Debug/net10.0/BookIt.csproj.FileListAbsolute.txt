@@ -269,3 +269,4 @@ C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\refint\BookIt.dll
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\BookIt.pdb
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\BookIt.genruntimeconfig.cache
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\ref\BookIt.dll
+C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\BookIt.sourcelink.json

@@ -3,7 +3,7 @@ namespace BookIt.Models;
 public class Booking
 {
     public int Id { get; set; }
-    public DateTime StarTime { get; set; }
+    public DateTime StartTime { get; set; }
     public string Status { get; set; } = "Pending";
 
     //İlişkiler

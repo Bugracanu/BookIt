@@ -194,7 +194,6 @@ C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\scopedcss\bundle\BookIt.styles.css
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\scopedcss\projectbundle\BookIt.bundle.scp.css
-C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\compressed\az96l6ojw3-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\compressed\q1vfjb2yrs-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\compressed\fnw4558qds-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\compressed\v2ue2xuapd-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -270,3 +269,4 @@ C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\BookIt.pdb
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\BookIt.genruntimeconfig.cache
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\ref\BookIt.dll
 C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\BookIt.sourcelink.json
+C:\Users\mblac\Desktop\BookIt\obj\Debug\net10.0\compressed\az96l6ojw3-{0}-7xppua393e-7xppua393e.gz

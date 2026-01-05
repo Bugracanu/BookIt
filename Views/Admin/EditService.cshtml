@@ -1,0 +1,31 @@
+@model BookIt.Models.Service
+
+@{
+ViewData["Title"] = "Hizmet Düzenle";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-5 card p-4 shadow-sm border-0">
+        <h2 class="text-center mb-4">Hizmet Düzenle</h2>
+        <form asp-action="EditService" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-3">
+                <label class="form-label">Hizmet Adı</label>
+                <input asp-for="Name" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Süre(Dakika)</label>
+                <input asp-for="Duration" type="number" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fiyat (TL)</label>
+                <input asp-for="Price" type="number" step="0.01" class="form-control" required />
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Değişiklikleri Kaydet</button>
+                <a asp-action="Services" class="btn btn-outline-secondary">İptal</a>
+            </div>
+        </form>
+    </div>
+</div>

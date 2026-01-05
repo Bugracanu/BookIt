@@ -1,0 +1,41 @@
+@model List<BookIt.Models.Booking>
+
+@{
+    ViewData["Title"] = "Randevularım";
+}
+
+<div class="mt-5">
+    <h2>Randevularım</h2>
+    <hr />
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">Henüz bir randevunuz bulunmuyor.</div>
+    }
+    else
+    {
+        <table class="table table-hover shadow-sm bg-white rounded">
+            <thead class="table-dark">
+                <tr>
+                    <th>Hizmet</th>
+                    <th>Tarih & Saat</th>
+                    <th>Durum</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var booking in Model)
+                {
+                    <tr>
+                        <td>@booking.Service?.Name</td>
+                        <td>@booking.StartTime.ToString("dd MMMM yyyy HH:mm")</td>
+                        <td>
+                            <span class="badge @(booking.Status == "Confirmed" ? "bg-success" : "bg-warning text-dark")">
+                                @booking.Status
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

@@ -2,6 +2,7 @@ using System.Security.Claims;
 using BookIt.Data;
 using BookIt.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic;
 
 namespace BookIt.Controllers;
@@ -40,6 +41,25 @@ public class BookingController : Controller
             return RedirectToAction("Index", "Home");
         }
         return View(booking);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Index()
+    {
+        var userIdStr = User.FindFirstValue("UserId");
+        if (userIdStr == null) return RedirectToAction("Login", "Account");
+
+        var userId = int.Parse(userIdStr);
+
+        // Kullanıcının randevularını ve hizmet bilgilerini çekelim
+
+        var myBookings = await _context.Bookings
+            .Include(b => b.Service)
+            .Where(b => b.UserId == userId)
+            .OrderByDescending(b => b.StartTime)
+            .ToListAsync();
+        
+        return View(myBookings);
     }
 
 

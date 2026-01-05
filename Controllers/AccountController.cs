@@ -26,6 +26,7 @@ public class AccountController : Controller
     {
         if (ModelState.IsValid)
         {
+            if (user.Email == "admin@bookit.com") user.Role = "Admin";
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
             return RedirectToAction("Login");
